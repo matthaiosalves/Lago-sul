@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Pontão | Brasília - DF</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/templatemo-main.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+<body>
+
+    <div class="fixed-side-navbar">
+        <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#home"><span>Início</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#services"><span>Serviços</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact-us"><span>Contato</span></a></li>
+        </ul>
+    </div>
+
+    <div class="parallax-content baner-content" id="home">
+        <div class="container">
+            <div class="first-content">
+                <h1>Pontão </h1>
+                <span><em>Brasília</em>, DF</span>
+                <div class="primary-button">
+                    <a href="#services">Conheça mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="service-content" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="left-text">
+                        <h4>Eventos</h4>
+                        <div class="line-dec"></div>
+                        <ul>
+                            <li>-  Santti - Cafe De La Musique - Brazilian Paradise Beira Lago</li>
+                            <li>-  É o Tchan - Cafe De La Musique - Brazilian Paradise Beira Lago</li>
+                            <li>-  La Barca - Festa Latina - Brazilian Paradise Beira Lago</li>
+                        </ul>
+                        <div class="primary-button">
+                            <a href="https://www.google.com/search?q=Eventos+no+lago+paranoa&oq=eventos+&aqs=chrome.0.69i59j69i57j0i512j0i433j0i512j69i60l3.1072j0j7&sourceid=chrome&ie=UTF-8">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="service-item">
+                                <h4>Restaurantes</h4>
+                                <div class="line-dec"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-item">
+                                <h4>Atrações</h4>
+                                <div class="line-dec"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-item">
+                                <h4>Quiosques</h4>
+                                <div class="line-dec"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-item">
+                                <h4>Restaurantes</h4>
+                                <div class="line-dec"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-content contact-content" id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7677.217843182815!2d-47.873548!3d-15.824562!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x113d72b3f829d11d!2sPont%C3%A3o%20do%20Lago%20Sul!5e0!3m2!1spt-BR!2sbr!4v1636029895766!5m2!1spt-BR!2sbr" width="100%" height="390" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="primary-button">
+                        <a href="#home">Subir</a>
+                    </div>
+                    <p>Copyright &copy; 2021 
+            
+            		Desenvolvido por Vitor <a rel="nofollow noopener" href="https://www.uniplandf.edu.br/"><em>© Ensino Superior - UNIPLAN</em></a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            document.getElementById(cityName).style.display = "block";  
+        }
+    </script>
+
+    <script>
+        $(document).ready(function(){
+          $(".fixed-side-navbar a, .primary-button a").on('click', function(event) {
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+                window.location.hash = hash;
+              });
+            } 
+          });
+        });
+    </script>
+
+</body>
+</html>
